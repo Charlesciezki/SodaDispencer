@@ -8,10 +8,10 @@ namespace SodaMaker
 {
     public class OrangeCan : Can
     {
-       public OrangeCan(string flavor, double value)
+       public OrangeCan()
         {
-            this.flavor = "Orange";
-            this.value = .6;
+            flavor = "Orange";
+            value = .6;
         }
     }
 }

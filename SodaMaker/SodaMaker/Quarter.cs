@@ -8,9 +8,9 @@ namespace SodaMaker
 {
     public class Quarter : Coin 
     {
-        public Quarter(double value)
+        public Quarter()
         {
-            this.value = .25;
+            value = .25;
         }
     }
 }

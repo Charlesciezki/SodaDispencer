@@ -10,6 +10,12 @@ namespace SodaMaker
     {
         static void Main(string[] args)
         {
+            MainInterface menu = new MainInterface();
+            bool runMachine = true;
+            while (runMachine)
+            {
+                menu.mainMenu();
+            }
         }
     }
 }

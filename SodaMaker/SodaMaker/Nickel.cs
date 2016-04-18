@@ -8,9 +8,9 @@ namespace SodaMaker
 {
     public class Nickel : Coin
     {
-        public Nickel(double value)
+        public Nickel()
         {
-            this.value = .05;
+            value = .05;
         }
     }
 }

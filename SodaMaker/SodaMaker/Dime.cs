@@ -8,9 +8,9 @@ namespace SodaMaker
 {
     public class Dime : Coin
     {
-        public Dime(double value)
+        public Dime()
         {
-            this.value = .1;
+            value = .1;
         }
     }
 }
