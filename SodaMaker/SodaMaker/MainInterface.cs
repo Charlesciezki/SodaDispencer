@@ -8,9 +8,6 @@ namespace SodaMaker
 {
     public class MainInterface
     {
-        //look at menu
-        //see how much change is in register
-        //se how many cans are in machine
         public SodaMachine sodaMachine = new SodaMachine(); 
         public void mainMenu()
         {
@@ -19,14 +16,13 @@ namespace SodaMaker
             Console.WriteLine("Enter 1 to buy a soda!");
             Console.WriteLine("Enter 2 to check sodas in inventory!");
             Console.WriteLine("Enter 3 to check change register!");
-            Console.WriteLine("Enter 4 to check your wallet amount!");
-            Console.WriteLine("Enter 5 to exit!");
+            Console.WriteLine("Enter 4 to exit!");
             int menuChoice = Convert.ToInt32(Console.ReadLine());
             switch (menuChoice)
             {
                 case 1:
                     Console.Clear();
-                    
+                    sodaMachine.buySoda();
                     break;
                 case 2:
                     Console.Clear();
@@ -37,9 +33,6 @@ namespace SodaMaker
                     sodaMachine.checkCoins();
                     break;
                 case 4:
-                    Console.Clear();
-                    break;
-                case 5:
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Come back soon!");
                     for(int i = 0; i < 10; i++)

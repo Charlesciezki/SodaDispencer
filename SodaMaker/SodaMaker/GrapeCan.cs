@@ -11,7 +11,7 @@ namespace SodaMaker
         public GrapeCan()
         {
             flavor = "Grape";
-            value = .35;
+            value = .6;
         }
     }
 }
